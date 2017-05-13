@@ -7,6 +7,14 @@ function ClickMe (){
 }
 
 function changeCss() {
-    var sheet = document.styleSheets[0];
-    sheet.addRule("#changCss {background-color:red}", 0 );
+    var css = document.getElementById("changCSS");
+    if(css.style.backgroundColor=="grey")
+    {
+        css.style.backgroundColor="red";
+    }
+    else
+    {
+        css.style.backgroundColor="grey";
+    }
 }
+
