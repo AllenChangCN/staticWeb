@@ -3,9 +3,12 @@
  */
 
 function ClickMe (){
-    var i = 0.15;
-    var j = 0.15;
-    alert(i+j);
+    alert(window.location.href);
+    alert(window.location.toString());
+    window.location.replace("https://www.baidu.com");
+    window.location.assign("https://www.google.com");
+    window.location.reload();
+    // window.open("https:www.baidu.com");
 }
 
 function changeCss() {
@@ -32,4 +35,17 @@ function moveWindow(){
 function apiTest(){
     alert(document.getElementById("firstText").value);
 }
+
+// window.setInterval(changeCss,2000);
+
+//模拟鼠标点击
+function simuClick() {
+    var but =document.getElementById("changCSS");
+    but.click();
+}
+window.setInterval(simuClick,3000);
+
+
+
+
 
